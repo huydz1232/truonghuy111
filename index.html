@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chơi cờ hay vcl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Trang chủ -->
+    <div id="home" class="page">
+        <div class="container">
+            <h1>Chơi Cờ Caro</h1>
+            <div class="game-logo">
+                <img src="image/tic_tac_toe_logo.png" alt="Tic Tac Toe Logo">
+            </div>
+            <div class="btn-container">
+                <button class="btn" onclick="gotoGame()">Bắt đầu chơi</button>
+                <button class="btn" onclick="gotoInstructions()">Hướng dẫn chơi</button>
+            </div>
+            <div class="hack-container">
+                <button class="btn hack-btn" onclick="window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';">Hack Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Màn hình chơi -->
+    <div id="game" class="page">
+        <div class="container">
+            <h1>Game Cờ Caro</h1>
+            <div id="gameBoard" class="board">
+                <!-- Các ô của bảng Tic Tac Toe sẽ được tạo bằng JavaScript -->
+            </div>
+            <div id="status" class="status"></div>
+            <button id="restartBtn" class="btn" onclick="restartGame()">Chơi lại</button>
+            <button class="btn" onclick="gotoHome()">Quay lại trang chủ</button>
+        </div>
+    </div>
+
+    <!-- Màn hình hướng dẫn -->
+    <div id="instructions" class="page">
+        <div class="container">
+            <h1>Hướng Dẫn Chơi</h1>
+            <div class="instruction-content">
+                <p>Chơi game Cờ Caro bằng cách lượt đánh 'X' và 'O' trên bảng 3x3.</p>
+                <p>Người chơi nào có được 3 con 'X' hoặc 'O' liên tiếp trên một hàng, cột hoặc đường chéo sẽ chiến thắng.</p>
+            </div>
+            <div class="btn-container">
+                <button class="btn" onclick="gotoHome()">Quay lại trang chủ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
